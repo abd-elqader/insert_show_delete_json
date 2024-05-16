@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="productName" placeholder="Product Name">
+            <label for="productName">product name</label>
+        </div>
+        <div class="form-floating">
+            <input type="number" class="form-control" id="productPrice" placeholder="Product Price">
+            <label for="productPrice">price</label>
+        </div>
+        <label for="productCategory" class="form-label mt-3">product category</label>
+        <input class="form-control mb-3" list="datalistOptions" id="productCategory" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+            <option value="electonic">
+            <option value="foods">
+            <option value="tools">
+            <option value="clothes">
+            <option value="animal">
+        </datalist>
+        <div class="form-floating my-5">
+            <textarea class="form-control" placeholder="Leave a comment here" id="productComment"
+                style="height: 100px"></textarea>
+            <label for="productComment">Comments</label>
+        </div>
+        <div class="mb-3">
+            <label for="productImg" class="form-label">upload image</label>
+            <input class="form-control" type="file" id="productImg">
+        </div>
+        <div id="button">
+            <button class="btn btn-info w-25 mt-3" onclick="addProduct()">add</button>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row" id="content">
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

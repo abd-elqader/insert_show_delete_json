@@ -1,0 +1,21 @@
+.position-relative{
+    overflow: hidden;
+}
+
+.layer {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scale(1.4);
+    transition: all .5s;
+}
+
+.layer:hover {
+    background-color: rgba(0, 0, 0, 0.062);
+    transform: scale(1);
+}
+
+img {
+    height: 204px;
+}
